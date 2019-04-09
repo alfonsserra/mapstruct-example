@@ -28,8 +28,8 @@ public class SupplierController {
     }
 
     @GetMapping("/suppliers")
-    public ResponseEntity<List<Supplier>> getAllSuppliers() {
-        return ResponseEntity.ok(supplierService.getSuppliers());
+    public ResponseEntity<List<SupplierDTO>> getAllSuppliers() {
+        return ResponseEntity.ok(supplierMapper.suppliersToSuppliersDtos(supplierService.getSuppliers()));
     }
 
     @GetMapping("/supplier/{id}")
