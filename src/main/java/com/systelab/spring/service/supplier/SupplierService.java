@@ -12,13 +12,13 @@ public class SupplierService {
 
     public List<Supplier> getSuppliers() {
         List<Supplier> suppliers = new ArrayList<>();
-        suppliers.add(new Supplier(1l, "IBM", new Contact("Ginni", "Rometty")));
-        suppliers.add(new Supplier(2l, "Whole foods", new Contact("John", "Mackey")));
-        suppliers.add(new Supplier(3l, "Apple", new Contact("Tim", "Cook")));
+        suppliers.add(new Supplier(1l, "IBM", "USA", new Contact("Ginni", "Rometty")));
+        suppliers.add(new Supplier(2l, "Whole foods", "USA", new Contact("John", "Mackey")));
+        suppliers.add(new Supplier(3l, "Apple", "USA", new Contact("Tim", "Cook")));
         return suppliers;
     }
 
     public Supplier getSupplier(Long id) {
-        return new Supplier(1l, "IBM", new Contact("Ginni", "Rometty"));
+        return new Supplier(1l, "IBM", "USA", new Contact("Ginni", "Rometty"));
     }
 }
